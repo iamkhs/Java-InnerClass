@@ -16,8 +16,17 @@ public class CPU {
         double memory;
         String manufacturer;
 
+        public RAM(double memory, String manufacturer){
+            this.memory = memory;
+            this.manufacturer = manufacturer;
+        }
+
         double getClockSpeed(){
             return 5.5;
+        }
+
+        public String getManufacturer(){
+            return this.manufacturer;
         }
     }
 }
